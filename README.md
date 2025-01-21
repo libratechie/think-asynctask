@@ -12,8 +12,26 @@ $ composer require libratechie/think-asynctask
 
 ### 生成 task 任务类
 
+快速创建 `FastTask` 异步任务类文件
+
 ```shell
 $ php think make:task FastTask
+```
+
+会生成一个 `app\tasks\FastTask` 异步任务类，可以根据自身需求调整其内部方法以适应需求。
+
+```php
+<?php
+
+namespace app\tasks;
+
+class FastTask
+{
+    public function invoke()
+    {
+        // TODO: Implement the task logic here.
+    }
+}
 ```
 
 ### 配置调整
